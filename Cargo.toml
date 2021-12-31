@@ -15,7 +15,7 @@ use-serde = ["serde", "bitcoin/use-serde"]
 
 [dependencies]
 bitcoin = "0.26"
-rand = "0.7"
+rand = { version = "0.7", features = ["wasm-bindgen"] }
 rust-crypto-wasm = { git = "https://github.com/buttercup/rust-crypto-wasm", rev = "2631030" }
 
 serde = { version = "1", optional = true, features = ["derive"] }
